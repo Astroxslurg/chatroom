@@ -1,18 +1,3 @@
 <head>
   <title>chatroom</title>
 </head>
-
-<body class="container">
-  <header>
-    <h1>Chatroom</h1>
-  </header>
-
-  <ul>
-    {{#each posts}}
-      {{> post}}
-    {{/each}}
-</body>
-
-<template name="post">
-  <li>{{text}}</li>
-</template>
