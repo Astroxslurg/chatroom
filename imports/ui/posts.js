@@ -8,6 +8,17 @@ Template.postsTemplate.helpers({
   },
 });
 
+Template.postsSubmit.helpers({
+  getUsername() {
+    user = Meteor.user();
+    return user ? user.username : null ;
+  },
+  getPlaceHolder() {
+    user = Meteor.user();
+    return user ? "Type to chat" : "Sign in to chat";
+  },
+});
+
 Template.postsSubmit.events({
   'submit .posts-submit-form'(event) {
     event.preventDefault();

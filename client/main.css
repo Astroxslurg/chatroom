@@ -1,1 +1,14 @@
-/* CSS declarations go here */
+.login {
+  float: right;
+  margin-right: 300px;
+  font-size: 30px;
+  padding-top: 12px;
+}
+.submit-post {
+  postition: absolute;
+  bottom: 0px;
+}
+
+header h1 {
+  float: left;
+}
