@@ -1,8 +1,8 @@
 import { Template } from 'meteor/templating';
 
-import './body.html';
+import './posts.html';
 
-Template.body.helpers({
+Template.postsContainer.helpers({
   posts: [
     { text: 'This is post 1' },
     { text: 'This is post 2' },

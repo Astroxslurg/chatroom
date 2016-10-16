@@ -1,14 +1,12 @@
-<template name=body>
+<template name="postsContainer">
   <div class="container">
-    <header>
-      <h1>Chatroom</h1>
-    </header>
-
+    
     <ul>
       {{#each posts}}
         {{> post}}
       {{/each}}
     </ul>
+
   </div>
 </template>
 
