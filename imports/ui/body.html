@@ -1,13 +1,15 @@
-<body class="container">
-  <header>
-    <h1>Chatroom</h1>
-  </header>
+<template name=body>
+  <div class="container">
+    <header>
+      <h1>Chatroom</h1>
+    </header>
 
-  <ul>
-    {{#each posts}}
-      {{> post}}
-    {{/each}}
-</body>
+    <ul>
+      {{#each posts}}
+        {{> post}}
+      {{/each}}
+  </div>
+</template>
 
 <template name="post">
   <li>{{text}}</li>
