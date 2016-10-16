@@ -1,15 +1,20 @@
 <template name="postsTemplate">
   <div class="posts">
-
     <ul>
       {{#each posts}}
         {{> post}}
       {{/each}}
     </ul>
-
   </div>
+  {{> postsSubmit}}
 </template>
 
 <template name="post">
   <li>{{text}}</li>
+</template>
+
+<template name="postsSubmit">
+  <form class="posts-submit-form">
+    <input type="text" name="text" placeholder="Type to chat" />
+  </form>
 </template>
