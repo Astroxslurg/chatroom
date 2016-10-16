@@ -1,11 +1,9 @@
 import { Template } from 'meteor/templating';
-
 import './posts.html';
+import { Posts } from '../api/posts.js';
 
 Template.postsContainer.helpers({
-  posts: [
-    { text: 'This is post 1' },
-    { text: 'This is post 2' },
-    { text: 'This is post 3' },
-  ],
+  posts: function () {
+    return Posts.find({});
+  },
 });
