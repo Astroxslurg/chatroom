@@ -17,6 +17,7 @@ Template.postsSubmit.events({
       console.log("You need to be logged in to post messages");
       return false;
     }
+    // console.log(user);
 
     const text = event.target.text.value;
     // console.log(event.target);
